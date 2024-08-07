@@ -1,0 +1,292 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1233,556" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="This block of code takes the credentials from the user and&#xD;&#xA;signs in to UiPath’s website using Web Recorder." DisplayName="Sequence - UiPath Sign in using web recording" sap:VirtualizedContainerService.HintSize="609,3097" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="EmailAddress" />
+      <Variable x:TypeArguments="x:String" Name="Password" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog - Email Address" sap:VirtualizedContainerService.HintSize="547,271" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter your Email Address" Title="Email Address">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[EmailAddress]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="Takes Password from User" DisplayName="Input Dialog - Password" sap:VirtualizedContainerService.HintSize="547,302" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Enter your Password" Title="Password">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[Password]</OutArgument>
+      </ui:InputDialog.Result>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InputDialog>
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="Open UiPath webpage." BrowserType="Edge" DisplayName="Open Browser - Opens &quot;www.uipath.com&quot;" sap:VirtualizedContainerService.HintSize="547,2394" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="www.uipath.com">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="513,2215" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: AI at work-The Business Automation Platform™-Leader in RPA, AI &amp; Automation | UiPa" sap:VirtualizedContainerService.HintSize="451,557" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="89e5c111-3ff9-4c49-94e6-9c1582f6cf60" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,308" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Try UiPath Free'" sap:VirtualizedContainerService.HintSize="354,218" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89e5c111-3ff9-4c49-94e6-9c1582f6cf60" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.uipath.com/" CVScreenId="64b6a22b-3b51-4dc3-8508-bb71b732dc13" CvElementArea="1633, 154, 168, 52" CvTextArea="1655, 172, 123, 19" CvTextArgument="Try UiPath Free" CvType="Button" DesignTimeRectangle="1634, 156, 167, 48" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Try UiPath Free' parentid='gatsby-focus-wrapper' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Try UiPath Free' parentid='gatsby-focus-wrapper' tag='A' type='' class='sc-19d6789-0 eiFOLM CTA ' check:innerText='Try UiPath Free' /&gt;" Guid="8218941e-058f-4ee5-a179-a58b0adfd9fb" InformativeScreenshot="7d78dfd343ea9087e7b9da4c1315076a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='AI at work-The Business Automation Platform™-Leader in RPA, AI &amp;amp; Automation | UiPath' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGSSURBVFhH7ZexSwMxGMU7iJM4iCRX6egkUm4WJ5HLVYqDf0BxcHZycnWQIk7i4OgkDo4OIk4OTg4dnUWcxEFESK7El/D1LtdDUa+9Ir0Hb8h7X5JfS9ujFRkwPUqXAP0AbSnYxlBt7nDuTANgoDJkEcQYAKiAt3DmFXwkhTdNcTEAUcDqfee2qfo5ANYn8A15k+KM0J0lc9zux6tvYp2cG7BzOwz9BuDe6fYozgjdYzLHt02mhTeFdYfyD5y7aoehQgCMdMOblIL7KqzOUmRVGEAkeD0KPd8YEDMUFweA9VsvV4K3KC4BSoD/BXDrdMcUZ4QuvggAWxQPBODC6a4pTikK2Zwzg4tYk6r8ACpgO07XjUR1kapYyA+cGa3Waoyq/AAyZDVkyumfzFuM3MeBS1gfwl2nv6StVljnAzBCtp/qv/Y7fvcXaJsVsvwAujE/gdw8lpOZrF9kyFdoSyzk+QF6QrcMn8IP8Cv8DJtvyS4+K/GDxhW6O9g8kjsAWKf4bwCDVAnwPcDI/5iMwOMOwPQnFLezb0DhfhIAAAAASUVORK5CYII=" InformativeScreenshot="73457ec68a86df99cad34a7db0d6e4e7.jpg" Selector="&lt;html app='msedge.exe' title='AI at work-The Business Automation Platform™-Leader in RPA, AI &amp;amp; Automation | UiPath' /&gt;" Title="AI at work-The Business Automation Platform™-Leader in RPA, AI &amp; Automation | UiPath" Url="https://www.uipath.com/" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Continue with UiPath" sap:VirtualizedContainerService.HintSize="451,1570" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="b78d9029-6f39-4b00-ba78-08cca73da4f7" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1330" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign In'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b78d9029-6f39-4b00-ba78-08cca73da4f7" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://account.uipath.com/login?state=hKFo2SB6UzBXMnh0dEU4dHdhbDlFWGlWZU5MSEpIcFlQSWR1NKFupWxvZ2luo3RpZNkgYVFDeUlMdjNRcEcxQzgxTENDUTRPRlhYZU5Nb1BJQWijY2lk2SAyeXQ5SGRGNDVPMDA2SDlxZFBjUDlhczVjZEdibkNXcw&amp;client=2yt9HdF45O006H9qdPcP9as5cdGbnCWs&amp;protocol=oauth2&amp;audience=https%3A%2F%2Fuipath.eu.auth0.com%2Fapi%2Fv2%2F&amp;scope=openid%20profile%20email%20read%3Acurrent_user%20update%3Acurrent_user_metadata&amp;redirect_uri=https%3A%2F%2Fcloud.uipath.com%2Fportal_%2FauthCallback&amp;type=signup&amp;platform_name=UiPath%20Automation%20Cloud%20for%20enterprise&amp;subscription_plan=trial&amp;ecommerceRedirect=false&amp;retryUrl=&amp;product_name=UiPath%20Automation%20Cloud&amp;company_code=B2B_CP&amp;cloudrpa_signup_subdomain=%2Fportal_&amp;register_endpoint=%2Fregister&amp;use_local_registration=false&amp;response_type=code&amp;response_mode=query&amp;nonce=ODlvWlpLenBkUFFIaW5PRWZYSGtmeG5FMURNbjlfdmN0MnduNjVlWTFmYQ%3D%3D&amp;code_challenge=g_N0HR5oiys6fp5yUD7H_veXLeZDLIrFx1v0VykHYlw&amp;code_challenge_method=S256&amp;auth0Client=eyJuYW1lIjoiYXV0aDAtcmVhY3QiLCJ2ZXJzaW9uIjoiMS4yLjAifQ%3D%3D" CVScreenId="7828c7c6-56fb-4c93-a782-acc8e4b56163" CvTextArea="1506, 261, 49, 17" CvTextArgument="Sign In" CvType="Text" DesignTimeRectangle="1508, 259, 47, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sign In' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sign In' tag='A' type='' class='MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1s2q2bo' check:innerText='Sign In' /&gt;" Guid="458ba658-9f68-4c8d-a474-c080af2ae7a8" InformativeScreenshot="958e6a84e055e65dd95b7001122751cc.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Continue with UiPath' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Continue with Email'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b78d9029-6f39-4b00-ba78-08cca73da4f7" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://account.uipath.com/login?state=hKFo2SB6UzBXMnh0dEU4dHdhbDlFWGlWZU5MSEpIcFlQSWR1NKFupWxvZ2luo3RpZNkgYVFDeUlMdjNRcEcxQzgxTENDUTRPRlhYZU5Nb1BJQWijY2lk2SAyeXQ5SGRGNDVPMDA2SDlxZFBjUDlhczVjZEdibkNXcw&amp;client=2yt9HdF45O006H9qdPcP9as5cdGbnCWs&amp;protocol=oauth2&amp;audience=https%3A%2F%2Fuipath.eu.auth0.com%2Fapi%2Fv2%2F&amp;scope=openid+profile+email+read%3Acurrent_user+update%3Acurrent_user_metadata&amp;redirect_uri=https%3A%2F%2Fcloud.uipath.com%2Fportal_%2FauthCallback&amp;type=login&amp;platform_name=UiPath+Automation+Cloud+for+enterprise&amp;subscription_plan=trial&amp;ecommerceRedirect=false&amp;retryUrl=&amp;product_name=UiPath+Automation+Cloud&amp;company_code=B2B_CP&amp;cloudrpa_signup_subdomain=%2Fportal_&amp;register_endpoint=%2Fregister&amp;use_local_registration=false&amp;response_type=code&amp;response_mode=query&amp;nonce=ODlvWlpLenBkUFFIaW5PRWZYSGtmeG5FMURNbjlfdmN0MnduNjVlWTFmYQ%3D%3D&amp;code_challenge=g_N0HR5oiys6fp5yUD7H_veXLeZDLIrFx1v0VykHYlw&amp;code_challenge_method=S256&amp;auth0Client=eyJuYW1lIjoiYXV0aDAtcmVhY3QiLCJ2ZXJzaW9uIjoiMS4yLjAifQ%3D%3D" CVScreenId="12a41964-fdbf-43dc-863d-e2f289cad8e5" CvElementArea="772, 652, 392, 42" CvTextArea="908, 665, 139, 14" CvTextArgument="Continue with Email" CvType="Button" DesignTimeRectangle="773, 653, 390, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Continue with Email' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Continue with Email' tag='BUTTON' type='button' class='MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButton-fullWidth MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButton-fullWidth jss127 css-g9vppd' check:innerText='Continue with Email' /&gt;" Guid="fb18b036-98f0-43f6-b87d-404da633ebf1" InformativeScreenshot="69bb5c4da15617760490d4e3f67ed7cb.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Continue with UiPath' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email *'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="b78d9029-6f39-4b00-ba78-08cca73da4f7" Text="[EmailAddress]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://account.uipath.com/login?state=hKFo2SB6UzBXMnh0dEU4dHdhbDlFWGlWZU5MSEpIcFlQSWR1NKFupWxvZ2luo3RpZNkgYVFDeUlMdjNRcEcxQzgxTENDUTRPRlhYZU5Nb1BJQWijY2lk2SAyeXQ5SGRGNDVPMDA2SDlxZFBjUDlhczVjZEdibkNXcw&amp;client=2yt9HdF45O006H9qdPcP9as5cdGbnCWs&amp;protocol=oauth2&amp;audience=https%3A%2F%2Fuipath.eu.auth0.com%2Fapi%2Fv2%2F&amp;scope=openid+profile+email+read%3Acurrent_user+update%3Acurrent_user_metadata&amp;redirect_uri=https%3A%2F%2Fcloud.uipath.com%2Fportal_%2FauthCallback&amp;type=login&amp;platform_name=UiPath+Automation+Cloud+for+enterprise&amp;subscription_plan=trial&amp;ecommerceRedirect=false&amp;retryUrl=&amp;product_name=UiPath+Automation+Cloud&amp;company_code=B2B_CP&amp;cloudrpa_signup_subdomain=%2Fportal_&amp;register_endpoint=%2Fregister&amp;use_local_registration=false&amp;response_type=code&amp;response_mode=query&amp;nonce=ODlvWlpLenBkUFFIaW5PRWZYSGtmeG5FMURNbjlfdmN0MnduNjVlWTFmYQ%3D%3D&amp;code_challenge=g_N0HR5oiys6fp5yUD7H_veXLeZDLIrFx1v0VykHYlw&amp;code_challenge_method=S256&amp;auth0Client=eyJuYW1lIjoiYXV0aDAtcmVhY3QiLCJ2ZXJzaW9uIjoiMS4yLjAifQ%3D%3D" CVScreenId="cc65071d-1cec-469f-b368-c8e1eb03dbab" CvElementArea="771, 582, 393, 44" CvType="InputBox" DesignTimeRectangle="773, 584, 390, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id=':r7:' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id=':r7:' tag='INPUT' type='text' class='MuiInputBase-input MuiOutlinedInput-input css-126m4gz' aaname='Email *' /&gt;" Guid="9ee9ec4b-a4d8-4344-8f20-1eb4927ebd34" InformativeScreenshot="0bec1e9a791b7dc3e98b59c952d3d4e6.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Continue with UiPath' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="cc65071d-1cec-469f-b368-c8e1eb03dbab" CvTextArea="772, 558, 49, 14" CvTextArgument="Email *" CvType="Text" DesignTimeRectangle="773, 556, 366, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl id='emailLabel' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='emailLabel' tag='LABEL' type='' class='MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary Mui-required MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-cu955h' aaname='Email' check:innerText='Email *' /&gt;" Guid="92e5b41c-9496-448a-8966-e88dff12bdeb" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password *'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="b78d9029-6f39-4b00-ba78-08cca73da4f7" Text="[Password]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://account.uipath.com/login?state=hKFo2SB6UzBXMnh0dEU4dHdhbDlFWGlWZU5MSEpIcFlQSWR1NKFupWxvZ2luo3RpZNkgYVFDeUlMdjNRcEcxQzgxTENDUTRPRlhYZU5Nb1BJQWijY2lk2SAyeXQ5SGRGNDVPMDA2SDlxZFBjUDlhczVjZEdibkNXcw&amp;client=2yt9HdF45O006H9qdPcP9as5cdGbnCWs&amp;protocol=oauth2&amp;audience=https%3A%2F%2Fuipath.eu.auth0.com%2Fapi%2Fv2%2F&amp;scope=openid+profile+email+read%3Acurrent_user+update%3Acurrent_user_metadata&amp;redirect_uri=https%3A%2F%2Fcloud.uipath.com%2Fportal_%2FauthCallback&amp;type=login&amp;platform_name=UiPath+Automation+Cloud+for+enterprise&amp;subscription_plan=trial&amp;ecommerceRedirect=false&amp;retryUrl=&amp;product_name=UiPath+Automation+Cloud&amp;company_code=B2B_CP&amp;cloudrpa_signup_subdomain=%2Fportal_&amp;register_endpoint=%2Fregister&amp;use_local_registration=false&amp;response_type=code&amp;response_mode=query&amp;nonce=ODlvWlpLenBkUFFIaW5PRWZYSGtmeG5FMURNbjlfdmN0MnduNjVlWTFmYQ%3D%3D&amp;code_challenge=g_N0HR5oiys6fp5yUD7H_veXLeZDLIrFx1v0VykHYlw&amp;code_challenge_method=S256&amp;auth0Client=eyJuYW1lIjoiYXV0aDAtcmVhY3QiLCJ2ZXJzaW9uIjoiMS4yLjAifQ%3D%3D" CVScreenId="cc65071d-1cec-469f-b368-c8e1eb03dbab" CvElementArea="772, 674, 392, 44" CvType="InputBox" DesignTimeRectangle="773, 676, 346, 40" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id=':r5:' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id=':r5:' tag='INPUT' type='password' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd css-h4rm8k' aaname='Password *' /&gt;" Guid="a910962e-254b-491b-8d1b-8b9aa2dd7016" InformativeScreenshot="ff6294b3225044ad41731ced9a46ae7e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Continue with UiPath' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="cc65071d-1cec-469f-b368-c8e1eb03dbab" CvTextArea="772, 650, 77, 14" CvTextArgument="Password *" CvType="Text" DesignTimeRectangle="773, 648, 366, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl id='passwordLabel' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='passwordLabel' tag='LABEL' type='' class='MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary Mui-required MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-cu955h' aaname='Password' check:innerText='Password *' /&gt;" Guid="853a97f4-998a-4cb9-aee9-7dbe97e28e97" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign In'" sap:VirtualizedContainerService.HintSize="354,218" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b78d9029-6f39-4b00-ba78-08cca73da4f7" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://account.uipath.com/login?state=hKFo2SB6UzBXMnh0dEU4dHdhbDlFWGlWZU5MSEpIcFlQSWR1NKFupWxvZ2luo3RpZNkgYVFDeUlMdjNRcEcxQzgxTENDUTRPRlhYZU5Nb1BJQWijY2lk2SAyeXQ5SGRGNDVPMDA2SDlxZFBjUDlhczVjZEdibkNXcw&amp;client=2yt9HdF45O006H9qdPcP9as5cdGbnCWs&amp;protocol=oauth2&amp;audience=https%3A%2F%2Fuipath.eu.auth0.com%2Fapi%2Fv2%2F&amp;scope=openid+profile+email+read%3Acurrent_user+update%3Acurrent_user_metadata&amp;redirect_uri=https%3A%2F%2Fcloud.uipath.com%2Fportal_%2FauthCallback&amp;type=login&amp;platform_name=UiPath+Automation+Cloud+for+enterprise&amp;subscription_plan=trial&amp;ecommerceRedirect=false&amp;retryUrl=&amp;product_name=UiPath+Automation+Cloud&amp;company_code=B2B_CP&amp;cloudrpa_signup_subdomain=%2Fportal_&amp;register_endpoint=%2Fregister&amp;use_local_registration=false&amp;response_type=code&amp;response_mode=query&amp;nonce=ODlvWlpLenBkUFFIaW5PRWZYSGtmeG5FMURNbjlfdmN0MnduNjVlWTFmYQ%3D%3D&amp;code_challenge=g_N0HR5oiys6fp5yUD7H_veXLeZDLIrFx1v0VykHYlw&amp;code_challenge_method=S256&amp;auth0Client=eyJuYW1lIjoiYXV0aDAtcmVhY3QiLCJ2ZXJzaW9uIjoiMS4yLjAifQ%3D%3D" CVScreenId="cc65071d-1cec-469f-b368-c8e1eb03dbab" CvElementArea="772, 751, 392, 43" CvTextArea="943, 764, 49, 18" CvTextArgument="Sign In" CvType="Button" DesignTimeRectangle="773, 752, 390, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth css-7mc4ql' aaname='Sign In' check:innerText='Sign In' /&gt;" Guid="51a9e629-7508-44d1-8518-73c72ce4da85" InformativeScreenshot="3b275a6073db2fc95741121044138312.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Continue with UiPath' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACEklEQVRYR+2Xv0scURSFV1fXrEFEIUsSbZLCIp2VKKTQYq00C5Igai0hTf4AtYmFlWBiJdiGpEwbMIJY2FmIGESQkMLKNAFR/P2dx51hnA1E3Xmjggc+5s257745szs7M5s5LBbObpJbF+AEjjyjY/wzgApT0AclT2jtaTiFsgBKV8p4FscYhPBT8BaAtargAWTNcmLffwDWqYP38APm4JmVLh+AcQ50BqLG7AvC11lG57mzZdsDfyFYe9o1IMb/D8A2D7OwaAy77pjwG2He5uhs+81/DccQrP0Zqq12qQANsGK+GJMfF/4jWI/Me2d+C3yHPfgFLpjE2H8AiXEzdMBzqDI7nQBsdT10QTfoenjiGhDjVAK0wk84hH0Ycg2IcWoBts3TXW/ENSDG9wHuZoBx1x0TvrcAD2HZfDHpumPCfwybkXmj5lccoAa+mS++wIWnmoTXDrs2J9pfWQCJ8YdIbQc6reTEvkLqBSY654XVEgmgO9kfq4k1eAsvoRc+QvSJ9xVy1ptIgFqYsVqAGvWAOYh44jeEnxDjygNI7Osq1+NWt9NgXhxdhK+sxYn9ZAJIePUwAHqmr8IWbMACTECbTQ2FVwB9JfolLUHRSlcPEIhaFprgKegAeSuViZrelPRSo/AifKNifL0ASYlj3N4AMvWn4Q1okg+09ifQhVkWQKigID4JDy7iAVLnhgMUzs4BKkIMusju2kIAAAAASUVORK5CYII=" InformativeScreenshot="463d4c9f4b624a616516cdfffb6956b4.jpg" Selector="&lt;html app='msedge.exe' title='Continue with UiPath' /&gt;" Title="Continue with UiPath" Url="https://account.uipath.com/login?state=hKFo2SB6UzBXMnh0dEU4dHdhbDlFWGlWZU5MSEpIcFlQSWR1NKFupWxvZ2luo3RpZNkgYVFDeUlMdjNRcEcxQzgxTENDUTRPRlhYZU5Nb1BJQWijY2lk2SAyeXQ5SGRGNDVPMDA2SDlxZFBjUDlhczVjZEdibkNXcw&amp;client=2yt9HdF45O006H9qdPcP9as5cdGbnCWs&amp;protocol=oauth2&amp;audience=https%3A%2F%2Fuipath.eu.auth0.com%2Fapi%2Fv2%2F&amp;scope=openid%20profile%20email%20read%3Acurrent_user%20update%3Acurrent_user_metadata&amp;redirect_uri=https%3A%2F%2Fcloud.uipath.com%2Fportal_%2FauthCallback&amp;type=signup&amp;platform_name=UiPath%20Automation%20Cloud%20for%20enterprise&amp;subscription_plan=trial&amp;ecommerceRedirect=false&amp;retryUrl=&amp;product_name=UiPath%20Automation%20Cloud&amp;company_code=B2B_CP&amp;cloudrpa_signup_subdomain=%2Fportal_&amp;register_endpoint=%2Fregister&amp;use_local_registration=false&amp;response_type=code&amp;response_mode=query&amp;nonce=ODlvWlpLenBkUFFIaW5PRWZYSGtmeG5FMURNbjlfdmN0MnduNjVlWTFmYQ%3D%3D&amp;code_challenge=g_N0HR5oiys6fp5yUD7H_veXLeZDLIrFx1v0VykHYlw&amp;code_challenge_method=S256&amp;auth0Client=eyJuYW1lIjoiYXV0aDAtcmVhY3QiLCJ2ZXJzaW9uIjoiMS4yLjAifQ%3D%3D" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:OpenBrowser>
+  </Sequence>
+</Activity>
